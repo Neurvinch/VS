@@ -30,4 +30,4 @@ inference = VariavleElimination(model)
 
 query = inference.query(variables=['targer'], evidence={'age': 'a', 'cp':3})
 
-print(query)
+print(query);
