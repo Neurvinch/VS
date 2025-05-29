@@ -26,3 +26,8 @@ accuracy = accuracy_score(y_test_cls, y_pred_cls)
 print("SVM Classifier Accuracy:", accuracy)
 
 
+import numpy as np
+
+from sklearn.datasets import make_regression
+
+
