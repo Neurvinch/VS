@@ -15,4 +15,4 @@ gnb.fit(x_train,y_train)
 
 y_pred = gnb.predict(x_test)
 
-print(accuracy_score(y_test,yt_pred))
+print(accuracy_score(y_test,y_pred))
