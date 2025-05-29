@@ -1,4 +1,4 @@
-from sklearn.neighbors import RadiusNeighborsClassifier
+from sklearn.neighbors import KNeighborsClassifier
 
 from sklearn.datasets import load_iris
 
