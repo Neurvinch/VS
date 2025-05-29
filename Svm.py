@@ -30,4 +30,15 @@ import numpy as np
 
 from sklearn.datasets import make_regression
 
+x_reg ,y_reg = make_regression(n_smaples = 100 , n_features= 1, noise= 15)
+
+X_train_cls, X_test_reg, y_train_reg, y_test_reg = train_test_split(x_reg, y_reg, test_size=0.3, random_state=42)
+
+svm_regressor = SVR(kernel='rbf')
+
+svm_regressor.fit(X_train_cls, y_train_reg)
+
+y_pred_reg = svm_regressor.predict(X_test_reg)
+
+mse = mean_squared_error(y_test_reg, y_pred_reg)
 
