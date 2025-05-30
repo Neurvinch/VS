@@ -9,4 +9,12 @@ graph = {
 
 
  def dfs(graph , start , visited = None , result = None ):
-    
+    if visited is None:
+      visited = set()
+    if result is None:
+        result = []
+
+
+    if start not in visited:
+       result.append(start)
+       visited.add(start)
