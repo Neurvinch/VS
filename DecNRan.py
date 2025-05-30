@@ -28,3 +28,4 @@ rf_model = RandomForestClassifier()
 rf_model.fit(x_train, y_train)
 
 rf_pred = rf_model.predict(x_test)
+
