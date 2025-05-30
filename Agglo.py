@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 import scipy.cluster.hierarchy as sch
 
-x,y = make_blobs(n_samples=100, centers= 4, cluster_std=0.6, random_state=42)
+X,y = make_blobs(n_samples=100, centers= 4, cluster_std=0.6, random_state=42)
 
 plt.figure(figsize=(10, 6))
 dendrogram = sch.dendrogram(sch.linkage(X, method='ward'))
@@ -17,7 +17,7 @@ plt.show()
 
 agglo = AgglomerativeClustering(n_clusters=4, affinity="euclidean", linkage="ward")
 
-y_pred = agglo.fit_predict(x)
+y_pred = agglo.fit_predict(X)
 
 plt.figure(figsize=(8, 6))
 plt.scatter(X[:, 0], X[:, 1], c=y_pred, cmap='rainbow')

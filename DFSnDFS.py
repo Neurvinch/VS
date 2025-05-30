@@ -23,7 +23,14 @@ def bfs(graph , start):
 
 
 
-def dfs ()
+def dfs (node , visited = none):
+    if visited is none:
+        visited = set()
+
+    if node not in visited:
+        visited.add(node)
+        for neighbour in graph[node ]:
+            dfs(neighbour, visited)    
 
 
 
