@@ -9,4 +9,7 @@ graph = {
     'F' : []
 }
 
-def 
+def bfs(graph , start):
+    visited = set()
+    queue = deque([start])
+    result = []
