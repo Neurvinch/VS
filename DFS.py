@@ -23,4 +23,4 @@ graph = {
     for neighbor in graph[start]:
        dfs(graph, neighbor, visited, result)
 
-       hhh   
+    return result
