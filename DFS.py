@@ -18,3 +18,9 @@ graph = {
     if start not in visited:
        result.append(start)
        visited.add(start)
+
+
+    for neighbor in graph[start]:
+       dfs(graph, neighbor, visited, result)
+
+       hhh   
