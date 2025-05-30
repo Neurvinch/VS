@@ -23,3 +23,4 @@ def bfs(graph , start):
             
             
 
+queue.extend(neighbor for neighbour in graph[node] if neighbour not in visited)
