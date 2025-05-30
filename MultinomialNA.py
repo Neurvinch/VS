@@ -26,3 +26,4 @@ y_pred = mnb.predict(X_test)
 # Evaluate
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print("\nClassification Report:\n", classification_report(y_test, y_pred))
+
